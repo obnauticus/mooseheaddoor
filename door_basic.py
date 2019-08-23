@@ -10,14 +10,14 @@ while 1:
 	if "RING" in line:
 		phone.flush()
 		phone.write(b'AT H1\r')
-        	print "I am off the hook bitch"
+        	print "I am off the hook"
 		time.sleep(3)
 		phone.flush()
         	phone.write(b'AT D9\r')
-		print "I dialed 9 bitch"
+		print "I dialed 9"
 		time.sleep(1)
 		phone.flush()
 		phone.write(b'AT H0\r')
-		print "I hung up the phone bitch"
+		print "I hung up the phone"
 
 	phone.flush()
